@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScriptの練習 - 02</title>
+</head>
+<body>
+<script>
+  // ここにJavaScriptを書いていきます
+  // Q1
+  var languagesArray = ['Japanese', 'English', 'Spanish', 'JavaScript'];
+
+  // 処理：配列から「JavaScript」を取得して表示
+  console.log(languagesArray[3]);
+
+  // Q2
+  var user = {
+    name: 'arata', 
+    age: 26, 
+    bloodType: 'A', 
+    favorite: 'card'
+  }
+
+  // 処理：オブジェクトから「26」を取得して表示
+  console.log(user.age);
+
+  // Q3
+  var userList = [
+    {
+      name: 'arata', 
+      age: 26
+    }, 
+    {
+      name: 'watanabe', 
+      age: 83
+    }, 
+    {
+      name: 'totani', 
+      age: 23
+    }
+  ];
+
+  // 処理：配列×オブジェクトから「watanabe」を取得して表示
+  console.log(userList[1].name);
+
+  // Q4
+  var playerList = [
+    {
+      name: 'arata', 
+      age: 26, 
+      favorites: [
+        'card Game', 
+        'Basket Ball', 
+        'Programming'
+      ]
+    }, 
+    {
+      name: 'watanabe', 
+      age: 83, 
+      favorites: [
+        'Tinder', 
+        'The Legend of Zelda', 
+      ]
+    }, 
+    {
+      name: 'totani', 
+      age: 23, 
+      favorites: [
+        'Football', 
+        'Smash Bros', 
+      ]
+    }
+  ]
+
+  // 処理：配列×オブジェクトから「The Legend of Zelda」を取得して表示
+  console.log(playerList[1].favorites[1]);
+
+  // Q5
+  var showText = function() {
+    console.log('これは関数です。');
+  }
+
+  // 処理：変数showTextに代入されている関数を実行
+  showText();
+
+  // Q6
+  // 定義：「変数numは0です。」がConsoleに表示されるよう、変数numを定義
+  var num = 0;
+
+  if (num > 0) {
+    console.log('変数numは' + num + 'で、0より大きいです。');
+  } else if (num < 0) {
+    console.log('変数numは' + num + 'で、0より小さいです。');
+  } else {
+    console.log('変数numは0です。');
+  }
+
+  // Q7
+  var countryList = ['Japan', 'China', 'America', 'Spain', 'Germany'];
+
+  // 処理：変数countryListに代入されている配列の中の値一つずつを表示
+  for (var i = 0; i < countryList.length; i++) {
+    console.log(countryList[i]);
+  }
+
+  // Q8
+  var multiplesTen = [];
+
+  // 処理：for文で配列に値を代入
+  for (var i = 0; i < 5; i++) {
+    multiplesTen[i] = i * 10;
+  }
+
+  // => [0, 10, 20, 30, 40] or Array(5) と表示
+  console.log(multiplesTen);
+
+</script>
+</body>
+</html>
